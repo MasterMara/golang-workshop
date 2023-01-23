@@ -2,42 +2,42 @@ package composition
 
 import "fmt"
 
-type shape interface {
+type shapex interface {
 	area() int
 	perimeter() int
 }
 
-type rectangle struct {
+type rectanglex struct {
 	shortEdge int
 	longEdge  int
 	sides     int
 }
 
-type square struct {
+type squarex struct {
 	edge int
 }
 
-func (r *rectangle) area() int {
+func (r *rectanglex) area() int {
 
 	return r.longEdge * r.shortEdge
 }
 
-func (r *rectangle) perimeter() int {
+func (r *rectanglex) perimeter() int {
 
 	return (r.longEdge + r.shortEdge) * 2
 }
 
-func (r *rectangle) getSides() int {
+func (r *rectanglex) getSides() int {
 
 	return r.sides
 }
 
-func (s *square) area() int {
+func (s *squarex) area() int {
 
 	return s.edge * s.edge
 }
 
-func (s *square) perimeter() int {
+func (s *squarex) perimeter() int {
 
 	return s.edge * 4
 }
@@ -49,8 +49,8 @@ func showAreaAndPerimeter(s shape) {
 }
 func main() {
 
-	rectangle := rectangle{shortEdge: 10, longEdge: 20}
-	square := square{edge: 10}
+	rectangle := rectanglex{shortEdge: 10, longEdge: 20}
+	square := squarex{edge: 10}
 
 	showAreaAndPerimeter(&rectangle)
 	showAreaAndPerimeter(&square)

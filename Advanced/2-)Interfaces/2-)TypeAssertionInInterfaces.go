@@ -2,37 +2,37 @@ package composition
 
 import "fmt"
 
-type shape interface {
+type shapexx interface {
 	area() int
 }
 
-type rectangle struct {
+type rectanglexx struct {
 	shortEdge int
 	longEdge  int
 }
 
-type square struct {
+type squarexx struct {
 	edge int
 }
 
-func (r *rectangle) area() int {
+func (r *rectanglexx) area() int {
 	return r.longEdge * r.shortEdge
 }
 
-func (r *rectangle) getShortEdge() int {
+func (r *rectanglexx) getShortEdge() int {
 	return r.shortEdge
 }
 
-func (s *square) area() int {
+func (s *squarexx) area() int {
 	return s.edge * s.edge
 }
 
-func calculateArea(s shape) {
+func calculateArea(s shapexx) {
 
 	fmt.Printf("s Type is : %T\t s value is : %v\n", s, s)
 
 	//1.WAY TO CREATE TYPE ASSERTION
-	myRect := s.(*rectangle) // Check error handling here :)
+	myRect := s.(*rectanglexx) // Check error handling here :)
 
 	//mysquare := s.(*square) -->This will create painc which means runtime error why because of  square has no other function just implements interfaces methods
 	fmt.Println("My Rectanlge short value inside s shape functin with type assertion is : ", myRect.getShortEdge())
@@ -40,7 +40,7 @@ func calculateArea(s shape) {
 
 func main() {
 
-	rect := rectangle{shortEdge: 10, longEdge: 20}
+	rect := rectanglexx{shortEdge: 10, longEdge: 20}
 
 	calculateArea(&rect)
 

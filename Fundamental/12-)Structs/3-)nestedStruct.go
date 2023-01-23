@@ -7,7 +7,7 @@ type address struct {
 	location string
 }
 
-type user struct {
+type userxx struct {
 	id      int
 	name    string
 	address address
@@ -26,7 +26,7 @@ type addressx struct {
 
 func main() {
 
-	myuser := user{
+	myuser := userxx{
 		id:   3,
 		name: "Mustafa",
 		address: address{

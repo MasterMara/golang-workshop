@@ -1,0 +1,14 @@
+package main
+
+func main() {
+
+}
+
+/*Some Notes By Mustafa KARACABEY:
+
+1-) takes function as a parameter
+2-) Returns function
+3-) TODO: When you look back this folder Write highOrderFunctions
+
+
+*/

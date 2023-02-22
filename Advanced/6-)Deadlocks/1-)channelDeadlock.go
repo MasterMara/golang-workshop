@@ -16,5 +16,6 @@ func main() {
 }
 
 /*Some Notes By Mustafa KARACABEY:
-
- */
+1-) if no sharing data means, no deadlock, no race condition
+2-) Sender No Receiver Sitation.
+*/

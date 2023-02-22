@@ -13,4 +13,7 @@ func main() {
 
 }
 
-// Bufferred Channellar belli bir alandan sonra bloklanırlar. Deadlocka düşer
+// Bufferred Channellar belli bir alandan sonra bloklanırlar. Deadlocka düşer. Buffer Channel Full!!!
+// Fakat aynı anda bu kanaldan data okunursa Deadlocak düşmez
+// If you try to send even if close it will cause pani
+// Closing twice also cause panic

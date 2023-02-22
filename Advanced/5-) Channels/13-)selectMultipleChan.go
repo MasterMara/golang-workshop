@@ -55,4 +55,9 @@ func main() {
 }
 
 /* Some Notes By Mustafa Karacabey
- */
+
+1-) Order does not matter at all
+2-) First operaiton that is non-blocking will be choosen and if all cases are blocking then defalut case will be chosen
+3-) Investigate, Fan-out, Funnel, Turn-out
+4-) Investiage Spinning CAS
+*/

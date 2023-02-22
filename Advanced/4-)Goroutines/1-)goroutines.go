@@ -21,4 +21,5 @@ func main() {
 4-) As a default go tries 1 cpu
 5-) Goroutine is  a lightweight thread that’s managed by go runtime.
 6-) Goroutine Threadden daha hızlı başlar
+7-) Avoid Blocking situations, avoid race conditions, use channel to avoid shared state, use select to manage channels
 */

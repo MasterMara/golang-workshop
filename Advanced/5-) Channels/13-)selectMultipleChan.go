@@ -10,6 +10,7 @@ func main() {
 	chan2 <- 2
 
 	////this will not print the second chan value
+	//NOT DETERMENISTIC
 	//select {
 	//	case c1Val := <-chan1:
 	//		fmt.Println(c1Val)
@@ -18,6 +19,7 @@ func main() {
 	//}
 	//
 	////this will not end
+	//DEADLOCK !!!
 	//for {
 	//	select {
 	//		case c1Val := <-chan1:
@@ -28,6 +30,7 @@ func main() {
 	//}
 	//
 	////this will not end
+	//INFINITE LOOP
 	//for {
 	//	select {
 	//		case c1Val := <-chan1:

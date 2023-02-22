@@ -20,4 +20,5 @@ func main() {
 3-) Concurency is not paralelism
 4-) As a default go tries 1 cpu
 5-) Goroutine is  a lightweight thread that’s managed by go runtime.
+6-) Goroutine Threadden daha hızlı başlar
 */

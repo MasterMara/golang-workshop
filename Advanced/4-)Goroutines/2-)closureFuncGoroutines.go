@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	// 1.WAY Closure  Funtion
+	// 1.WAY Closure  Function
 	for i := 0; i < 10; i++ {
 
 		func() {

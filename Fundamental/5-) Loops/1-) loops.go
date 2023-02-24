@@ -21,7 +21,7 @@ func main() {
 		fmt.Println("Fruit is : ", fruit)
 	}
 
-	// 3.WAY --> for usage for infinite loop
+	// 3.WAY --> for usage for infinite loops
 	for {
 		fmt.Println("Your Counter value is :", counter)
 		if counter > 5 {
